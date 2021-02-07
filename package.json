@@ -5,9 +5,9 @@
   "author": "Robert Miron <73788820+Thoud@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/chalk": "^2.2.0",
-    "@types/prompt-sync": "^4.1.0",
-    "@types/randomcolor": "^0.5.5",
+    "@types/chalk": "2.2.0",
+    "@types/prompt-sync": "4.1.0",
+    "@types/randomcolor": "0.5.5",
     "@typescript-eslint/eslint-plugin": "4.14.2",
     "@typescript-eslint/parser": "4.14.2",
     "@upleveled/eslint-config-upleveled": "1.5.17",
