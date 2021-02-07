@@ -5,8 +5,8 @@
   "author": "Robert Miron <73788820+Thoud@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.0.0",
-    "@typescript-eslint/parser": "4.0.0",
+    "@typescript-eslint/eslint-plugin": "4.14.2",
+    "@typescript-eslint/parser": "4.14.2",
     "@upleveled/eslint-config-upleveled": "1.5.17",
     "babel-eslint": "10.1.0",
     "eslint": "7.5.0",
