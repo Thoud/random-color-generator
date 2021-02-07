@@ -4,9 +4,9 @@
 
 ## Dependencies
 
-- prompt-sync
-- chalk
-- randomcolor
+- [prompt-sync](https://www.npmjs.com/package/prompt-sync)
+- [chalk](https://www.npmjs.com/package/chalk)
+- [randomcolor](https://www.npmjs.com/package/randomcolor)
 
 ## Usage
 
