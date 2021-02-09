@@ -13,7 +13,7 @@ const supportedHue = [
   'blue',
   'purple',
   'pink',
-  'monochrome'
+  'monochrome',
 ];
 const supportedLuminosity = ['bright', 'light', 'dark'];
 let hue, luminosity, boxSize, width, height;
@@ -23,7 +23,7 @@ function drawBox(boxWidth, boxHeight, boxHue, boxLuminosity) {
   // Set border color with given hue and luminosity
   const color = randomColor({
     hue: boxHue,
-    luminosity: boxLuminosity
+    luminosity: boxLuminosity,
   });
 
   for (let i = 1; i <= boxHeight; i++) {
@@ -93,12 +93,12 @@ if (inputArg.includes('help') || inputArg.includes('--help')) {
 
     // Set luminosity if user gives a supported luminosity as argument
     luminosity = inputArg.find((element) =>
-      supportedLuminosity.includes(element)
+      supportedLuminosity.includes(element),
     );
 
     // Set boxSize if user gives a size as argument
     boxSize = inputArg.find(
-      (element) => !Number.isNaN(parseInt(element.split('x')[0], 10))
+      (element) => !Number.isNaN(parseInt(element.split('x')[0], 10)),
     );
 
     // Set width and height if boxSize is defined
