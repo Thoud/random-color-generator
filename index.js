@@ -16,7 +16,7 @@ const supportedHue = [
   'monochrome',
 ];
 const supportedLuminosity = ['bright', 'light', 'dark'];
-let hue, luminosity, boxSize, width, height;
+let hue, luminosity, width, height;
 
 // Function to draw a Rectangle in a given color
 function drawBox(boxWidth, boxHeight, boxHue, boxLuminosity) {
@@ -59,7 +59,6 @@ function drawBox(boxWidth, boxHeight, boxHue, boxLuminosity) {
 
 // Include the option for '--help' or 'help' as an argument
 // Program ends if asked for help
-// Todo: Write the help message
 if (inputArg.includes('help') || inputArg.includes('--help')) {
   console.log(`
   The program can be run without any arguments.
@@ -97,7 +96,7 @@ if (inputArg.includes('help') || inputArg.includes('--help')) {
     );
 
     // Set boxSize if user gives a size as argument
-    boxSize = inputArg.find(
+    const boxSize = inputArg.find(
       (element) => !Number.isNaN(parseInt(element.split('x')[0], 10)),
     );
 
@@ -105,8 +104,14 @@ if (inputArg.includes('help') || inputArg.includes('--help')) {
     if (boxSize) {
       width = parseInt(boxSize.split('x')[0], 10);
       height = parseInt(boxSize.split('x')[1], 10);
-    } else {
-      // Base value for width and height if boxSize is not defined
+    }
+
+    if (!width || !height) {
+      // Base value for width and height if the input is wrong and a error message
+      console.log(
+        'Your width and/or height property were wrong, so I generated a random box size for you',
+      );
+
       width = 31;
       height = 9;
     }

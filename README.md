@@ -8,11 +8,21 @@
 - [chalk](https://www.npmjs.com/package/chalk)
 - [randomcolor](https://www.npmjs.com/package/randomcolor)
 
+## Setup
+
+Clone the repo from GitHub and then install the dependencies:
+
+```sh
+git clone https://github.com/Thoud/random-color-generator.git
+cd random-color-generator
+yarn or npm install
+```
+
 ## Usage
 
 The script can be run without any arguments. If done so a box in the size of 31x9 will be drawn in a random color.
 
-```terminal
+```sh
 node index.js
 ```
 
@@ -39,25 +49,25 @@ You can specify the size, hue and luminosity as arguments.The order does not mat
 
 Please input the size in this format "width"x"height". If not the standard size (31x9) will be drawn.
 
-```terminal
+```sh
 node index.js blue light
 ```
 
 ![Light blue colored box](./images/blue_light.png)
 
-```terminal
+```sh
 node index.js red
 ```
 
 ![Red colored box](./images/red.png)
 
-```terminal
+```sh
 node index.js light
 ```
 
 ![Box in a light random color](./images/light.png)
 
-```terminal
+```sh
 node index.js 25x5 green
 ```
 
@@ -65,7 +75,7 @@ node index.js 25x5 green
 
 There is also a possibility to be guided through the input.For this please type in 'ask' as an argument.
 
-```terminal
+```sh
 node index.js ask
 ```
 
@@ -73,7 +83,7 @@ node index.js ask
 
 To get a short explanation directly inside the terminal pass in 'help' or '--help' as an argument.
 
-```terminal
+```sh
 node index.js help
 ```
 
